@@ -1,0 +1,87 @@
+﻿/*
+ * eigene Print-CSS-Datei zu den Internetseiten.
+ *
+ * created by Kristine Wolf.
+ *
+ */
+ 
+ /*
+ * gnereller Aufbau der Seite.
+ */
+ 
+ html{
+	 font-family: 'Slabo 27px', serif;
+	 background: #fff !important;
+	 color: #000;
+ }
+ 
+ body{
+	 width: 100% !important;
+	 margin: 0 !important;
+	 padding: 0 !important;
+	 font-size: 12pt;
+ }
+ 
+ nav{
+	 display: none;
+ }
+ 
+main{
+	font-family: 'Open Sans', sans-serif;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	line-height: 1.5;
+	text-align: justify;
+
+ }
+ 
+h1, footer{
+	display: inline;
+}
+
+
+
+/*
+* Schriftfarben und Schriftgrößen.
+*/
+
+a{
+	color: black;
+	text-decoration: none;
+}
+ 
+ h1{
+	 text-decoration: underline;
+	 font-style: italic;
+	 font-weight: 600;
+ }
+ 
+ h2{
+	 font-weight: normal;
+ }
+ 
+ h3{
+	 text-decoration: underline;
+ }
+ 
+ footer.fußnote{
+	font-weight: 200;
+}
+ 
+ /*
+ * Bilder.
+ */
+ 
+figure img{
+	 display: none;
+ }
+ 
+ 
+div.slider{
+	display: none;
+}
+
+
+ 

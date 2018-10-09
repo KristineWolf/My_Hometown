@@ -1,0 +1,314 @@
+﻿/*
+ * eigene CSS-Datei zu den Internetseiten.
+ *
+ * created by Kristine Wolf
+ *
+ */
+ 
+ /*
+  * wichtiges zum Aussehen jeder Seite.
+  */
+  
+body{
+	background-color: #DCDCDC;
+}
+
+main{
+	background-color: #F5FfDC;
+	border: 1px solid gray;
+}
+
+header{
+	width: 100%;
+	height: 320px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+ * verwendete Schriftarten und Schriftgröße auf jeder Seite.
+ */
+ 
+h1{
+	font-family: 'Marck Script', cursive;
+}
+
+nav, footer, main{
+	font-family: 'Dosis', sans-serif;	
+}
+
+nav{
+	font-size: 110%;
+	font-weight: 700;
+}
+
+
+footer{
+	text-align: center;
+	font-size: 80%;
+}
+
+h2{
+	font-size: 130%;
+}
+
+h3{
+	font-size: 110%;
+	text-decoration: underline;
+}
+/*
+ * Farben einiger Schriften.
+ * hier in der Navigation und im Footerbereich.
+ */
+ 
+nav.row  a{
+	color: white;
+}
+
+nav a.active{
+	color: #8B0000;
+}
+
+nav#auto a.page,
+nav#sportarten a.page{
+	color: black;
+}
+
+a.seitenNavi{
+	color: #3104B4;
+}
+
+a.fußnote{
+	color: black;
+}
+
+nav div a:hover:not(.active){
+	color: #8B0000;
+}
+
+nav#auto div a:hover:not(.page),
+nav#sportarten div a:hover:not(.page){
+	color: black;
+}
+
+a.fußnote:hover{
+	font-weight: bolder;
+}
+ 
+ /*
+  * Gemeinsamkeiten der horziontalen Navigation auf jeder Seite.
+  * Der fehlende Unterstrich ist allerdings ebenfalls eine Gemeinsamkeit, steht aber bei den Gemeinsamkeiten der vertikalen Navigation.
+  */
+
+nav div{
+	text-align: center;
+}
+
+nav div{
+	width: 100%;
+	padding: 5px;
+}
+
+
+/*
+* Gemeinsamkeiten der vertikalen Navigation.
+*/
+
+nav ul li {
+	margin-bottom: 20px;
+}
+
+ nav ul{
+	 list-style: none;
+ }
+ 
+a{
+	 text-decoration: none;
+ }
+
+/*
+ * Aussehen der Bilder.
+ */
+  
+ figure img{
+	box-shadow: 10px 10px 10px grey;
+}
+
+img.link{
+	border: none;
+}
+  
+
+/*
+ * spezielles Aussehen der Startseite (index.html).
+ * zuerst Foto im Headerbereich und dann Hintergrundfarbe der horizontalen Navigation.
+ */
+ 
+#startseite {
+	background-image:url("../img/startseite/skyline.png");
+}
+
+nav#index div{
+	background-color: #20B2AA;
+}
+
+/*
+* spezielles Aussehen von audi.html.
+*/
+
+#audi{
+	background-image:url("../img/audi/Skyline.png");
+}
+
+nav#auto div{
+	background-color: #CD0000;
+}
+
+/*
+ * spezielles Aussehen von einkaufen.html.
+ */
+
+#einkaufen{
+	background-image:url("../img/einkaufen/skyline.png");
+}
+
+nav#shoppen div{
+	background-color: #4A708B;
+}
+
+/*
+* spezielles Aussehen von sport.html.
+*/
+
+#sport{
+	background-image:url("../img/sport/Skyline.png");
+}
+
+nav#sportarten div{
+	background-color: #FF0000;
+}
+
+/*
+* spezielles Aussehen von freizeit.html.
+*/
+
+#freizeit{
+	background-image:url("../img/freizeit/skyline.png");
+}
+
+nav#aktivitäten div{
+	background-color: #2F4F4F;
+}
+
+/*
+* spezielles Aussehen von nachtleben.html.
+*/
+
+#nachtleben{
+	background-image:url("../img/nachtleben/skyline.png");
+}
+
+nav#nacht div{
+	background-color: #212121;
+}
+
+span.print{
+	display: none;
+	}
+
+/*
+ * Aussehen der Seiten bei einem kleineren Bildschirm.
+ */
+ @media only screen and (max-width:769px) {
+	 
+	 /*
+	  * Generelles Aussehen jeder Seite.
+	  */
+	  
+	body{
+		background-color: white;
+	}
+
+	main{
+		background-color: white;
+		border: none;
+	}
+	
+	header#startseite,
+	header#audi,
+	header#einkaufen,
+	header#freizeit,
+	header#nachtleben,
+	header#sport{
+		background-image: url("../img/altstadt.jpg");
+		height: 300px;
+	}
+	
+	footer.fußnote{
+		border-top: 1px dotted gray;
+	}
+	
+	/*
+	 * Schriftgrößen und Schriftausrichtung.
+	 */
+	 
+	main{
+		text-align: justify;
+	}
+	
+	h1{text-align: left;}
+	 
+	/*
+	 * Verändertes Aussehen der horizontalen Navigation.
+	 * Farbe, Größe und Linkfarbe.
+	 */
+			
+	nav#index div,
+	nav#auto div,
+	nav#aktivitäten div,
+	nav#sportarten div,
+	nav#shoppen div,
+	nav#nacht div{
+		background-color: black;
+		padding: 8px;
+		margin-bottom: -8px;
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+	}
+	
+	nav#auto a.page,
+	nav#sportarten a.page{
+		color: #8B0000;
+	}
+		
+	nav#auto div a:hover:not(.page),
+	nav#sportarten div a:hover:not(.page){
+		color: #8B0000;
+	}
+	/*
+	 * wichtiges zu den Bildern.
+	 * Letztere definiert, dass die Bilder der vertikalen Navigation untereinander stehen sollen.
+	 */
+	 
+	figure img{
+		box-shadow: none;
+	}
+	
+	img{
+		height: 200px;
+	}
+	
+	img.link{
+		float: left;
+		clear: left;	
+		margin-bottom: 8px;
+	}
+	
+	
+	
+	
+		
+}
+
+
